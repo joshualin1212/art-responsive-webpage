@@ -1,4 +1,5 @@
 /*show*/
+/* range cards */
 document.querySelectorAll(".course-col").forEach((block) => {
   block.onclick = () => {
     document.querySelector(".popup-image").style.display = "block";
@@ -7,6 +8,16 @@ document.querySelectorAll(".course-col").forEach((block) => {
       .getAttribute("src");
   };
 });
+
+/* all images zoom */
+document.querySelectorAll("img").forEach((block) => {
+  block.onclick = () => {
+    document.querySelector(".popup-image").style.display = "block";
+    document.querySelector(".popup-image img").src = block.getAttribute("src");
+  };
+});
+
+
 
 /* hide*/
 

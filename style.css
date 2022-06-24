@@ -12,12 +12,15 @@
 }
 
 .header {
+
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url(images/banner.png);
   background-position: center;
   background-size: cover;
+  position: relative; /* allow overflow cuz nav is absolute*/
+  overflow-x: hidden; /*prevent the hidden nav from scroll*/
 }
 
 nav {
@@ -142,7 +145,8 @@ nav .fa {
 
 /* My art ability */
 .course {
-  height: 100vh;
+  position: relative;
+  min-height: 100vh;
   width: 85%;
   margin: auto;
   text-align: center;
@@ -247,7 +251,6 @@ p {
   font-size: 1.1rem;
   font-weight: 300;
   line-height: 1.6;
-
   padding: 10px;
 }
 /* campus section */
@@ -264,7 +267,7 @@ p {
   position: relative;
   overflow: hidden;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .campus-col img {
   width: 100%;
@@ -283,14 +286,18 @@ p {
   text-align: center;
 }
 .testimonial-col{
+  display:flex;
+  flex-direction: column;
   margin-top: 5%;
   flex-basis: 44%;
   border-radius: 10px;
-  margin-bottom: 5%;
-  text-align: left;
+  margin-bottom: 15%;
   background: var(--white-purple);
+  overflow: hidden; /* so radius can apply to image that usually ignores parent*/
 }
-
+.testimonial-col img{
+  object-fit: cover;
+}
 
 /*Call to action*/
 .cta{
@@ -313,14 +320,15 @@ p {
 /* footer */
 .footer {
   margin: auto;
-  max-width: 900px;
+  max-width: min(85%, 950px);
+  border-top: 2px solid #777;
   text-align: center;
   padding: 30px 0;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 .footer h4 {
   font-size: large;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1rem;
   margin-top: 1.1rem;
   font-weight: 600;
 }
@@ -328,5 +336,5 @@ p {
 .icons .fa {
   color: var(--dark-purple);
   cursor: pointer;
-  padding: 1.1rem 0.5rem;
+  padding: 1rem 0.5rem;
 }

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Webpage Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <div id="imageContainer">
+        <nav>
+          <a href="index.html"> <img src="images/logo.png" /></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="gallery.html">GALLERY</a></li>
+              <li><a href="https://youtu.be/2i8THYgCoTw">HOGRIDER</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+          <h1>About</h1>
+        </div>
+      </div>
+    </section>
+    <!--me overview-->
+    <section class="campus">
+     <h1> ME </h1>
+     <p>I'm a Computer Science / Music Major from Northeastern.</p>
+
+    
+    <!--art throughout 2021-->
+    <section class="campus">
+      <h1>The Art Journey</h1>
+      <p>
+        After stumbling upon random digital art videos on Youtube in May 2021, I was inspired to start myself. I was always a fan of Japanese animation, and it
+        seemed like a fun hobby to pick up. The main way I improved was by
+        watching a lot of Youtube videos, analyzing good art, and practicing deliberately.
+      </p>
+      <div class="row">
+        <div class="campus-col">
+          <img src="./images/myart2021.png" />
+        </div>
+      </div>
+    </section>
+    <!-- inktober section -->
+    <section class="campus">
+      <h1>Inktober 2021</h1>
+      <p>
+        In order to get better at art, I did a thing called Inktober, where I
+        drew one drawing every day for each day in October. I started with
+        proportion practice. The order is from left to right, top to down. I
+        copy drew many drawings I liked afterwards to get a feel for good art.
+        In the second half, I practiced coloring, and in the end, I spent a bit
+        more time to finish something without a reference.
+      </p>
+      <div class="row">
+        <div class="campus-col">
+          <img src="./images/inktober2021.png" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="cta">
+      <h1>Want to commission me?</h1>
+      <a class="hero-btn" href="contact.html"
+        >CONTACT ME <br />(this is a test, don't actually.)</a
+      >
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+      <h4>Connect with me!</h4>
+      <p>
+        Just kidding, these links are fake! If you like what I do, then that's
+        great! Too bad I quit! I needed to stop myself from becoming
+        hyperfocused, but if you reached this far, I appreciate the curiosity.
+        I'm proud of being able to learn fast.
+      </p>
+      <div class="icons">
+        <a href="https://facebook.com/" target="_blank"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a
+          href="https://twitter.com/ninomaeinanis/status/1539865249620398082"
+          target="_blank"
+          ><i class="fa fa-twitter"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/amelie.penelope.toto/"
+          target="_blank"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/" target="_blank"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- Javascript for toggle menu-->
+    <script src="togglemenu.js"></script>
+    <!--Javascript for toggle popup image-->
+    <script src="popupimage.js"></script>
+  </body>
+</html>

@@ -12,7 +12,6 @@
 }
 
 .header {
-
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
@@ -272,22 +271,19 @@ p {
   width: 100%;
   object-fit: contain;
 }
-.campus-col:hover  {
+.campus-col:hover {
   box-shadow: 3px 3px 15px 2px var(--dark-purple);
 }
 
-
-
-
 /* testimonials */
-.testimonials{
+.testimonials {
   width: 80%;
   margin: auto;
   padding-top: 100px;
   text-align: center;
 }
-.testimonial-col{
-  display:flex;
+.testimonial-col {
+  display: flex;
   flex-direction: column;
   margin-top: 5%;
   flex-basis: 44%;
@@ -296,15 +292,16 @@ p {
   background: var(--white-purple);
   overflow: hidden; /* so radius can apply to image that usually ignores parent*/
 }
-.testimonial-col img{
+.testimonial-col img {
   object-fit: cover;
 }
 
 /*Call to action*/
-.cta{
-  margin: 100px auto; 
+.cta {
+  margin: 100px auto;
   width: 80%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./images/yorubottle\(notext\).png);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(./images/yorubottle\(notext\).png);
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -312,7 +309,7 @@ p {
   padding: 140px 0;
 }
 
-.cta h1{
+.cta h1 {
   color: #fff;
   margin-bottom: 40px;
   padding: 0;
@@ -321,7 +318,7 @@ p {
 /* footer */
 .footer {
   margin: auto;
-  max-width: min(85%, 950px);
+  max-width: 85%;
   border-top: 2px solid #777;
   text-align: center;
   padding: 30px 0;
@@ -338,4 +335,90 @@ p {
   color: var(--dark-purple);
   cursor: pointer;
   padding: 1rem 0.5rem;
+}
+
+/* other pages */
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/wanekopetcatwindblue.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  position: relative; /* allow overflow cuz nav is absolute*/
+  overflow-x: hidden; /*prevent the hidden nav from scroll*/
+}
+.sub-header h1 {
+  font-size: 3.2rem;
+  margin-top: 100px;
+}
+
+@media (max-width: 700) {
+  .sub-header h1 {
+    font-size: 24px;
+  }
+}
+
+/* contact page*/
+
+.location {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+.location iframe {
+  width: 100%;
+}
+.contact-us {
+  width: 80%;
+  margin: auto;
+}
+.contact-col {
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+.contact-col:last-child {
+  margin-bottom: 100px;
+}
+.contact-col div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contact-col div .fa {
+  font-size: 28px;
+  margin: 10px;
+  margin-right: 30px;
+  color: var(--dark-purple);
+}
+.contact-col div p {
+  padding: 0;
+}
+.contact-col h5 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 400;
+}
+.red-btn {
+  border: 1px solid var(--dark-purple);
+  background: transparent;
+  color: var(--dark-purple);
+}
+.red-btn:hover {
+  color: #fff;
+}
+
+/*submission form*/
+.contact-col input,
+.contact-col textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* solve annoying input box overflow problem*/
+  /*makes padding + margin included in element size calculation so width 100% will include padding instead of adding padding on top of 100%*/
+  resize: none;
 }

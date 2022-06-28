@@ -286,16 +286,16 @@ p {
 .testimonial-text {
   width: 90%;
   margin: auto;
-  margin-top: calc(11vw - 70px);
+  margin-top: calc(max(0, 11vw - 77px));
   margin-bottom: 10%;
   border-radius: 10px;
 }
 .testimonial-text h1 {
-  font-size: min(2.5rem, 3vw);
+  font-size: clamp(1rem, 4px + 3vw, 2.5rem);
   padding: 20px;
 }
 .testimonial-text p {
-  font-size: min(2vw, 1.1rem);
+  font-size: max(2vw, 14px);
   padding: 20px;
   padding-top: 0;
 }
@@ -436,7 +436,6 @@ p {
   width: 100%;
 }
 
-
 .gallery-item-container:hover .text {
   opacity: 1;
   animation: move-down 0.3s linear;
@@ -484,7 +483,6 @@ p {
 .h-4 {
   grid-row: span 4;
 }
-
 
 @media (max-width: 700px) {
   .gallery-grid {
